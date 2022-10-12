@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+  </head>
+  <body>
+    <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+
+    <!-- start coding  -->
+
+    <div class="main">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/ecommerce-product-page-main/images/logo.svg" alt="" />
+        </div>
+        <ul>
+          <li class="active"><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="avatar">
+          <span class="span"
+            ><img src="./images/icon-cart.svg" id="cart" /><sup class="sup"
+              >0</sup
+            ></span
+          >
+          <img src="./images/image-avatar.png" id="avatar" />
+        </div>
+        <div class="fill">
+          <h1>cart</h1>
+          <hr />
+          <div class="img">
+            <p class="cart-empty">Your Cart is empty</p>
+            <div class="product-img"></div>
+
+            <div class="description">
+              <p class="titl"></p>
+              <p class="price-container">
+                <span class="price"></span><span class="fois"></span
+                ><span id="total"></span>
+              </p>
+            </div>
+            <div class="trash"></div>
+          </div>
+          <div class="check-btn"></div>
+        </div>
+        <div class="toogle">
+          <img src="./images/icon-menu.svg" id="toogle" />
+        </div>
+      </nav>
+
+      <!-- content start  -->
+
+      <section class="all">
+        <div class="product">
+          <div class="big-one">
+            <img src="./images/image-product-1.jpg" alt="" id="main-product" />
+            <div class="move">
+              <div class="next">
+                <img src="./images/icon-next.svg" alt="" />
+              </div>
+              <div class="previou">
+                <img src="./images/icon-previous.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="small-one">
+            <div class="small">
+              <img
+                src="./images/image-product-1.jpg"
+                alt=""
+                class="second-product"
+              />
+            </div>
+            <div class="small">
+              <img
+                src="./images/image-product-2.jpg"
+                alt=""
+                class="second-product"
+              />
+            </div>
+            <div class="small">
+              <img
+                src="./images/image-product-3.jpg"
+                alt=""
+                class="second-product"
+              />
+            </div>
+            <div class="small">
+              <img
+                src="./images/image-product-4.jpg"
+                alt=""
+                class="second-product"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="product-title">
+            <h3>Sneaker Company</h3>
+            <h1>Fall Limited Edition Sneakers</h1>
+          </div>
+          <div class="product-description">
+            <p>
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+          </div>
+          <div class="product-price">
+            <h2>$125.00</h2>
+            <span>50%</span>
+            <div class="del"><del>250$</del></div>
+          </div>
+          <div class="product-footer">
+            <div class="control">
+              <span class="desincress"
+                ><img src="./images/icon-minus.svg" alt=""
+              /></span>
+              <span class="total">1</span>
+              <span class="incress"
+                ><img src="./images/icon-plus.svg" alt=""
+              /></span>
+            </div>
+            <button type="submit" class="submit">
+              <img src="./images/icon-cart.svg" alt="" class="cart-icon" />
+              Add to carte
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- content end  -->
+    </div>
+    <div class="after-select product">
+      <div class="product">
+        <div class="big-one">
+          <img src="./images/image-product-1.jpg" alt="" id="main-product" />
+        </div>
+        <div class="small-one">
+          <div class="small">
+            <img
+              src="./images/image-product-1.jpg"
+              alt=""
+              class="second-product"
+            />
+          </div>
+          <div class="small">
+            <img
+              src="./images/image-product-2.jpg"
+              alt=""
+              class="second-product"
+            />
+          </div>
+          <div class="small">
+            <img
+              src="./images/image-product-3.jpg"
+              alt=""
+              class="second-product"
+            />
+          </div>
+          <div class="small">
+            <img
+              src="./images/image-product-4.jpg"
+              alt=""
+              class="second-product"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
